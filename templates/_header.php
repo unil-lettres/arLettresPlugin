@@ -22,7 +22,7 @@
 
   <nav>
 
-    <?//php echo get_component('menu', 'userMenu') ?>  <!--- button login --->
+    <?php echo get_component('menu', 'userMenu') ?>  <!--- button login --->
 
     <?php echo get_component('menu', 'quickLinksMenu') ?>
 
@@ -47,19 +47,3 @@
   <?php echo get_component_slot('header') ?>
 
 </header>
-
-<?php if (sfConfig::get('app_toggleDescription')): ?>
-  <div id="site-slogan">
-    <a href="https://www.accesstomemory.org/pt-br/" target="_blank">
-    <img src="../../images/logo-white.png"></a>
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span12">
-          <span><?php echo esc_specialchars(sfConfig::get('app_siteDescription')) ?></span> 
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class = "linha-inferior">
-  </div>
-<?php endif; ?>
