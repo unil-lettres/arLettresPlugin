@@ -183,6 +183,10 @@ button.clipboard-wide:hover {
     background-color: #05A69D;
 }
 
+#treeview{
+    background-color: #fff;
+}
+
 #treeview-menu{
     display: none;
 }
@@ -203,7 +207,35 @@ button.clipboard-wide:hover {
 #treeview-search .search-box button {
     color: #ddd;
     font-size: 13px;
-    top: 0;
+    top: 2px;
+}
+
+#treeview-header p {
+    color: #333;
+    background: #e6e6e6;
+    border-right: 2px solid #05A69D;
+    font-weight: bold !important;
+    font-variant: small-caps;
+}
+
+#treeview .active {
+    background-color: #fff !important;
+}
+
+#treeview .active a {
+    color: #333;
+}
+
+#treeview .more a {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0;
+    border: 1px solid #d9d9d9;
+}
+
+#treeview .more a:hover {
+    background-color: #05A69D;
+    color: #fff;
 }
 
 #sort-header .dropdown-selected {
@@ -489,7 +521,7 @@ header #logo img{
 }
 
 .advanced-search {
-  padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .advanced-search-section{
@@ -498,4 +530,16 @@ header #logo img{
 
 .search-popover{
     border-radius: 0;
+}
+
+.list-menu ul {
+    background-color: #fff;
+}
+
+.list-menu ul a:hover {
+    background-color: #fff;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    min-height: 32px;
 }
